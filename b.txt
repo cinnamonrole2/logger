@@ -9,5 +9,5 @@ $CAs = certutil -dump | Select-String "CA name" | ForEach-Object { ($_ -split '"
 # 3. For each CA, dump ALL certificate templates with full details
 foreach ($CA in $CAs) {
     Write-Host "Checking CA: $CA" -ForegroundColor Cyan
-    certutil -TCAInfo -config "$CA" | Out-File "C:\temp\$($CA -replace '\\','_').txt"
+    certutil -TCAInfo -config "$CA" | Out-File "C:\pentest\$($CA -replace '\\','_').txt"
 }
