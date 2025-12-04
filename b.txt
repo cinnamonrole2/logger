@@ -1,1 +1,2 @@
-https://a.cloudfront.net/
+http://d1bugkgs5qzmz0.cloudfront.net
+
